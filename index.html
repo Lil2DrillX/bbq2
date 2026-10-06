@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aegis Global — Flexbox & Grid Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Flexbox: Шапка сайта -->
+    <header class="header">
+        <div class="logo">Aegis Global</div>
+        <nav class="nav">
+            <a href="#hero">Главная</a>
+            <a href="#features">Преимущества</a>
+            <a href="#services">Услуги</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+        <a href="#" class="btn-auth">Войти/Регистрация</a>
+    </header>
+
+    <main>
+        <!-- Flexbox: Первый экран -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <span class="badge">ЗАДАНИЕ 4</span>
+                <h1>Построение сеток с Flexbox и CSS Grid</h1>
+                <p class="hero-desc">Гибкое выравнивание и двухмерные адаптивные макеты в действии.</p>
+                <a href="#features" class="btn-cta">Смотреть сетку</a>
+            </div>
+            <div class="hero-media">
+                <img src="aegis.jpg" alt="Aegis Global — Логотип">
+            </div>
+        </section>
+
+        <!-- CSS Grid: Блок преимуществ (3 колонки) -->
+        <section id="features" class="features-section">
+            <span class="section-tag">ПОЧЕМУ МЫ</span>
+            <h2>Преимущества (CSS Grid)</h2>
+            
+            <div class="cards-grid">
+                <article class="card">
+                    <span class="card-num">01</span>
+                    <h3>Простота</h3>
+                    <p>Понятный интерфейс для комфортной работы.</p>
+                </article>
+
+                <article class="card">
+                    <span class="card-num">02</span>
+                    <h3>Надёжность</h3>
+                    <p>Стабильный сервис и защита ваших данных.</p>
+                </article>
+
+                <article class="card">
+                    <span class="card-num">03</span>
+                    <h3>Поддержка</h3>
+                    <p>Быстрые ответы на любые ваши вопросы.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- CSS Grid: Дополнительная адаптивная галерея из 6 блоков -->
+        <section id="services" class="services-section">
+            <span class="section-tag">СЕРВИСЫ</span>
+            <h2>Наши сервисы (6 элементов Grid)</h2>
+            
+            <div class="demo-grid">
+                <div class="grid-box">Блок 1: UI/UX Дизайн</div>
+                <div class="grid-box">Блок 2: Frontend Верстка</div>
+                <div class="grid-box">Блок 3: CSS Анимации</div>
+                <div class="grid-box">Блок 4: Адаптивность</div>
+                <div class="grid-box">Блок 5: Оптимизация</div>
+                <div class="grid-box">Блок 6: Поддержка 24/7</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Flexbox: Подвал сайта -->
+    <footer id="contacts" class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <strong class="footer-logo">Aegis Global</strong>
+                <p>Практическая работа №4: Flexbox и Grid.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <p><a href="mailto:Spit.faer.03@gmail.com">Spit.faer.03@gmail.com</a></p>
+                <p><a href="tel:+77762059320">+7 (776) 205 9320</a></p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Мы в соцсетях</h4>
+                <div class="social-links">
+                    <a href="#" class="social-tag">VK</a>
+                    <a href="#" class="social-tag">TG</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Задание 4. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
